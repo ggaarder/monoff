@@ -1,7 +1,7 @@
 from sys import platform
 from os import system
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 def monoff():
     if platform == 'linux':

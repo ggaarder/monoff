@@ -16,7 +16,7 @@ REQUIRES = []
 setup(
     name='monoff',
     version=version,
-    description='',
+    description='Simple script to turn off all monitors',
     long_description=readme,
     long_description_content_type='text/markdown',
     author='Matthew Miguel',
