@@ -1,15 +1,15 @@
 from sys import platform
-from os import system
 
 __version__ = '0.0.2'
 
 def monoff():
     if platform == 'linux':
+        from os import system
         system('xset dpms force off')
     elif platform == 'win32' or platform == 'cygwin':
         from win32gui import SendMessage
         from win32con import HWND_BROADCAST, WM_SYSCOMMAND
-        from os import getpid
+        from os import getpid, system
         from threading import Timer
         SC_MONITORPOWER = 0xF170
         SC_MONITORPOWER_OFF = 2

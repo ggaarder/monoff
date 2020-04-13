@@ -1,2 +1,2 @@
-from . import monoff
+from . import *
 monoff()
